@@ -1,0 +1,31 @@
+AccessoriesId,Name,Strength,Dexterity,Intelligence,ImagePath,CategoryId
+1,Bone Helmet,33,44,34,../public/assets/images/BoneHelmet,1
+2,Deicide Mask,3,2,31,../public/assets/images/DeicideMask,1
+3,Hunter Hood,38,45,14,../public/assets/images/HunterHood,1
+4,Nightmare Bascinet,7,41,34,../public/assets/images/NightmareBascinet,1
+5,Royal Burgonet,24,8,28,../public/assets/images/RoyalBurgonet,1
+6,Solaris Circlet,33,15,28,../public/assets/images/SolarisCirclet,1
+7,Blood Raiment,7,43,0,../public/assets/images/BloodRaiment,2
+8,Full Dragon Scale,17,34,21,../public/assets/images/FullDragonScale,2
+9,Lordly Plate,16,35,6,../public/assets/images/LordlyPlate,2
+10,Necromancer Silks,39,19,19,../public/assets/images/NecromancerSilks,2
+11,Saintly Chainmail,12,23,17,../public/assets/images/SaintlyChainmail,2
+12,Zodiac Leather,13,1,32,../public/assets/images/ZodiacLeather,2
+13,Champion Kite Shield,45,20,46,../public/assets/images/ChampionKiteShield,3
+14,Elegant Round Shield,49,8,3,../public/assets/images/ElegantRoundShield,3
+15,Golden Buckler,26,35,38,../public/assets/images/GoldenBuckler,3
+16,Reinforced Tower Shield,36,26,19,../public/assets/images/ReinforcedTowerShield,3
+17,Supreme Spiked Shield,48,45,28,../public/assets/images/SupremeSpikedShield,3
+18,Titanium Spirit Shield,14,24,20,../public/assets/images/TitaniumSpiritShield,3
+19,Abyssal,7,42,11,../public/assets/images/Abyssal,4
+20,Aurumvorax,21,34,11,../public/assets/images/Aurumvorax,4
+21,Dyadus,26,49,37,../public/assets/images/Dyadus,4
+22,Tulfall,20,28,11,../public/assets/images/Tulfall,4
+23,Varunastra,36,16,17,../public/assets/images/Varunastra,4
+24,Vulconus,14,45,38,../public/assets/images/Vulconus,4
+25,Crusader Boots,31,43,48,../public/assets/images/CrusaderBoots,5
+26,Dragonscale Boots,2,16,40,../public/assets/images/DragonscaleBoots,5
+27,Murder Boots,19,42,25,../public/assets/images/MurderBoots,5
+28,Sorcerer Boots,0,48,37,../public/assets/images/SorcererBoots,5
+29,Stealth Boots,20,5,2,../public/assets/images/StealthBoots,5
+30,Titan Greaves,23,2,6,../public/assets/images/TitanGreaves,5

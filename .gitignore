@@ -18,5 +18,5 @@ application/logs/*
 /nbproject/private/
 /nbproject/
 
-#External CSV Files
+#CSV Excel Files
 CSV/
