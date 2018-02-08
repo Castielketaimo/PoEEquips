@@ -11,5 +11,6 @@
 ### New components
 * images folder - RT 
 * 31 pictures - RT
+* weapon folder and weapon images - RT
 
 ### Updated components
