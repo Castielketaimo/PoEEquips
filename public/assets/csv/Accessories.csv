@@ -1,31 +1,31 @@
 AccessoriesId,Name,Strength,Dexterity,Intelligence,ImagePath,CategoryId
-1,Bone Helmet,80,62,73,../images/helmets/BoneHelmet.png,1
-2,Deicide Mask,12,14,55,../images/helmets/DeicideMask.png,1
-3,Hunter Hood,32,23,89,../images/helmets/HunterHood.png,1
-4,Nightmare Bascinet,39,63,5,../images/helmets/NightmareBascinet.png,1
-5,Royal Burgonet,82,77,85,../images/helmets/RoyalBurgonet.png,1
-6,Solaris Circlet,0,61,64,../images/helmets/SolarisCirclet.png,1
-7,Blood Raiment,47,61,29,../images/armors/BloodRaiment.png,2
-8,Full Dragon Scale,53,95,67,../images/armors/FullDragonScale.png,2
-9,Lordly Plate,66,82,79,../images/armors/LordlyPlate.png,2
-10,Necromancer Silks,75,80,12,../images/armors/NecromancerSilks.png,2
-11,Saintly Chainmail,52,57,76,../images/armors/SaintlyChainmail.png,2
-12,Zodiac Leather,84,30,86,../images/armors/ZodiacLeather.png,2
-13,Champion Kite Shield,9,40,10,../images/shields/ChampionKiteShield.png,3
-14,Elegant Round Shield,77,10,66,../images/shields/ElegantRoundShield.png,3
-15,Golden Buckler,18,71,29,../images/shields/GoldenBuckler.png,3
-16,Reinforced Tower Shield,25,26,30,../images/shields/ReinforcedTowerShield.png,3
-17,Supreme Spiked Shield,18,51,1,../images/shields/SupremeSpikedShield.png,3
-18,Titanium Spirit Shield,8,69,12,../images/shields/TitaniumSpiritShield.png,3
-19,Abyssal,40,27,93,../images/weapon/Abyssal.png,4
-20,Aurumvorax,88,1,98,../images/weapon/Aurumvorax.png,4
-21,Dyadus,92,47,91,../images/weapon/Dyadus.png,4
-22,Tulfall,42,33,65,../images/weapon/Tulfall.png,4
-23,Varunastra,32,11,26,../images/weapon/Varunastra.png,4
-24,Vulconus,2,55,13,../images/weapon/Vulconus.png,4
-25,Crusader Boots,7,3,63,../images/boots/CrusaderBoots.png,5
-26,Dragonscale Boots,11,75,76,../images/boots/DragonscaleBoots.png,5
-27,Murder Boots,69,86,22,../images/boots/MurderBoots.png,5
-28,Sorcerer Boots,40,26,59,../images/boots/SorcererBoots.png,5
-29,Stealth Boots,81,59,97,../images/boots/StealthBoots.png,5
-30,Titan Greaves,26,94,38,../images/boots/TitanGreaves.png,5
+1,Bone Helmet,31,2,45,helmets/BoneHelmet.png,1
+2,Deicide Mask,46,30,48,helmets/DeicideMask.png,1
+3,Hunter Hood,50,67,34,helmets/HunterHood.png,1
+4,Nightmare Bascinet,30,62,65,helmets/NightmareBascinet.png,1
+5,Royal Burgonet,22,3,20,helmets/RoyalBurgonet.png,1
+6,Solaris Circlet,31,23,13,helmets/SolarisCirclet.png,1
+7,Blood Raiment,95,50,20,armors/BloodRaiment.png,2
+8,Full Dragon Scale,58,97,42,armors/FullDragonScale.png,2
+9,Lordly Plate,25,98,75,armors/LordlyPlate.png,2
+10,Necromancer Silks,41,95,6,armors/NecromancerSilks.png,2
+11,Saintly Chainmail,77,13,12,armors/SaintlyChainmail.png,2
+12,Zodiac Leather,54,25,2,armors/ZodiacLeather.png,2
+13,Champion Kite Shield,42,84,20,shields/ChampionKiteShield.png,3
+14,Elegant Round Shield,79,52,28,shields/ElegantRoundShield.png,3
+15,Golden Buckler,41,85,56,shields/GoldenBuckler.png,3
+16,Reinforced Tower Shield,45,53,13,shields/ReinforcedTowerShield.png,3
+17,Supreme Spiked Shield,46,21,6,shields/SupremeSpikedShield.png,3
+18,Titanium Spirit Shield,9,19,32,shields/TitaniumSpiritShield.png,3
+19,Abyssal,55,96,72,weapon/Abyssal.png,4
+20,Aurumvorax,37,95,43,weapon/Aurumvorax.png,4
+21,Dyadus,91,86,8,weapon/Dyadus.png,4
+22,Tulfall,38,99,50,weapon/Tulfall.png,4
+23,Varunastra,81,59,98,weapon/Varunastra.png,4
+24,Vulconus,71,26,14,weapon/Vulconus.png,4
+25,Crusader Boots,36,82,43,boots/CrusaderBoots.png,5
+26,Dragonscale Boots,68,28,6,boots/DragonscaleBoots.png,5
+27,Murder Boots,89,24,77,boots/MurderBoots.png,5
+28,Sorcerer Boots,26,16,97,boots/SorcererBoots.png,5
+29,Stealth Boots,69,15,53,boots/StealthBoots.png,5
+30,Titan Greaves,83,72,99,boots/TitanGreaves.png,5
