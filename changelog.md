@@ -9,6 +9,9 @@
 ## Version 0.1
 
 ### New components
+* csv folder - QL
+* 3 csv files - QL
+* Accessories.csv, Categories.csv, Presets.csv - QL
 * images folder - RT 
 * 31 pictures - RT
 * weapon folder and weapon images - RT
