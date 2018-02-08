@@ -15,5 +15,6 @@
 * images folder - RT 
 * 31 pictures - RT
 * weapon folder and weapon images - RT
+* about.php controllers and about_message view - RT
 
 ### Updated components
