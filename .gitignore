@@ -17,3 +17,6 @@ application/logs/*
 /vendor/
 /nbproject/private/
 /nbproject/
+
+#External CSV Files
+CSV/
