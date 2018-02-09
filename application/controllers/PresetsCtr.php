@@ -2,9 +2,8 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class PresetsCtr extends Application
 {
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -17,10 +16,14 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+
 	public function index()
 	{
-		$this->data['pagebody'] = 'welcome_message';
-		$this->render();
+		$this->load->model('Presets');
+		$all_the_items = $this->Presets->all();
+		$data['all'] = $all_the_items;
+		$this->load->view('presets_display', $data);
 	}
 
 }
