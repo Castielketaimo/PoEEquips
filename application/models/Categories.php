@@ -4,7 +4,7 @@
  * This is a model for Accessories. The data will come from Categories.csv
  * ------------------------------------------------------------------------
  */
-class Accessories extends CSV_Model
+class Categories extends CSV_Model
 {
 
 	/**
@@ -15,6 +15,6 @@ class Accessories extends CSV_Model
 	 */
 	function __construct()
 	{
-		parent::__construct("../public/assets/csv/Categories.csv", "CategoryId", Categories);
+		parent::__construct('assets/csv/Categories.csv', 'CategoryId');
 	}
 }

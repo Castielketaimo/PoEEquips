@@ -13,8 +13,8 @@ class Presets extends CSV_Model
 	 * @param string $keyfield  Name of the primary key field
 	 * @param string $entity	Entity name meaningful to the persistence
 	 */
-	function __construct(PresetId)
+	function __construct()
 	{
-		parent::__construct("../public/assets/csv/Presets.csv", "PresetId", PresetId);
+		parent::__construct("assets/csv/Presets.csv", 'PresetId');
 	}
 }
