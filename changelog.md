@@ -29,3 +29,4 @@
 --------Feb 9,2018
 * ../views/template (moved the footer to footer.php) -CL
 * ../cotrollers/Welcome.php (load partial and welcome page) -CL
+* gitignore (allowed CSV files in git)
