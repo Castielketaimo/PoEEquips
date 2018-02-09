@@ -21,9 +21,9 @@ class Welcome extends Application
 	{
 		$this->data['pagebody'] = 'welcome_message';
 
-		$this->load->view("_menubar");
+		$this->load->view("partials/_menubar");
 		$this->render();
-		$this->load->view("_footer");
+		$this->load->view("partials/_footer");
 
 	}
 
