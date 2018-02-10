@@ -24,6 +24,4 @@ class Welcome extends Application
 		$this->render();
 		$this->load->view("partials/_footer");
 	}
-
-}
 }
