@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is a model for Accessories. The data will come from Categories.csv
+ * This is Categories's model. This model will get all the data from Categories.csv
  * ------------------------------------------------------------------------
  */
 class Categories extends CSV_Model

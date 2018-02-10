@@ -17,6 +17,10 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	/**
+     * this controller get the data from welcome_message view, menubar and footer view and display them
+     */
 	public function index()
 	{
 		$this->data['pagebody'] = 'welcome_message';
