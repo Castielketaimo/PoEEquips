@@ -28,6 +28,7 @@
 
 ### Updated components
 --------Feb 9,2018
+* ../controller/Info.php -(updated the Info three method to be fully functional -CL
 * ..assets/css/default.css (updated css file)
 * ../view/Welcome_message (added invantory image and divs)
 * ../views/template (moved the footer to footer.php) -CL
