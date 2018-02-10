@@ -13,8 +13,7 @@
 	<body>
         <div id="container">
 			{content}
-			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.
-				{ci_version}</p>
         </div>
+
 	</body>
 </html>

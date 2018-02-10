@@ -132,7 +132,6 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-
 $autoload['model'] = array('Accessories');
 $autoload['model'] = array('Categories');
 $autoload['model'] = array('Presets');

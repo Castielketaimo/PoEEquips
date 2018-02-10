@@ -5,7 +5,7 @@ require_once 'DataMapper.php';
 
 /**
  * Generic data access model, for an RDB.
- * 
+ *
  * This class is called MY_Model to keep CodeIgniter happy.
  *
  * @author		JLP

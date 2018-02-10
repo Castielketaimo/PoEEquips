@@ -111,4 +111,12 @@ p.footer {
 	top : 140px;
 	width: 100px;
 	height: 150px;
+  
+.footer {
+position: absolute;
+left: 0;
+bottom: 0;
+height: 50px;
+width: 100%;
+overflow:hidden;
 }

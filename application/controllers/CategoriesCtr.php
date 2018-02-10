@@ -2,9 +2,8 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class CategoriesCtr extends Application
 {
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -17,13 +16,14 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+
 	public function index()
 	{
-		$this->data['pagebody'] = 'welcome_message';
-		$this->load->view("partials/_menubar");
-		$this->render();
-		$this->load->view("partials/_footer");
+		$this->load->model('Categories');
+		$all_the_items = $this->Categories->all();
+		$data['all'] = $all_the_items;
+		$this->load->view('categories_display', $data);
 	}
 
-}
 }

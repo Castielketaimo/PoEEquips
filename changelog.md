@@ -1,4 +1,4 @@
-# Changelog 
+# Changelog
 
 ## Rules
 
@@ -21,8 +21,15 @@
 * csv folder - QL
 * 3 csv files - QL
 * Accessories.csv, Categories.csv, Presets.csv - QL
-* images folder - RT 
+* images folder - RT
 * 31 pictures - RT
 * weapon folder and weapon images - RT
+* about.php controllers and about_message view - RT
 
 ### Updated components
+--------Feb 9,2018
+* ..assets/css/default.css (updated css file)
+* ../view/Welcome_message (added invantory image and divs)
+* ../views/template (moved the footer to footer.php) -CL
+* ../cotrollers/Welcome.php (load partial and welcome page) -CL
+* gitignore (allowed CSV files in git)
