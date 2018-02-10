@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Changelog
 
 ## Rules
