@@ -10,8 +10,9 @@
 
 ### New components
 --------Feb 9, 2018--------
-* views/partials/menubar.php -CL
-* veiws/partials/footer.php -CL
+* ../controller/Info.php -CL
+* ../views/partials/menubar.php -CL
+* ../veiws/partials/footer.php -CL
 --------Feb 8, 2018--------
 * 3 models - QL
 * Accessories.php, Categories.php, Presets.php
@@ -27,6 +28,8 @@
 
 ### Updated components
 --------Feb 9,2018
+* ..assets/css/default.css (updated css file)
+* ../view/Welcome_message (added invantory image and divs)
 * ../views/template (moved the footer to footer.php) -CL
 * ../cotrollers/Welcome.php (load partial and welcome page) -CL
 * gitignore (allowed CSV files in git)
