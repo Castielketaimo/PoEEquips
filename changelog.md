@@ -29,6 +29,7 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* updated menu items (delete link to Json files and replace with catalog) -CL
 * added links to menu dropDownItems -CL
 * updated ../view/about_message (Changed the index function to make the page looks nicer) -CL
 --------Feb 9,2018--------
