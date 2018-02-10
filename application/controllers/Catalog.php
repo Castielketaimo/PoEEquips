@@ -80,7 +80,7 @@ class Catalog extends Application
 					<th>Dexterity</th>
 					<th>Intelligence</th>
 					<th>Image</th>
-					<th>Category Id</th>
+					<th>Category</th>
 				</tr>
 				{tableItems}
 			</table>
