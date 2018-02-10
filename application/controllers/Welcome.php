@@ -30,4 +30,4 @@ class Welcome extends Application
 	}
 
 }
-}
+

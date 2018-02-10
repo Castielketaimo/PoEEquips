@@ -54,6 +54,9 @@ p.footer {
 	box-shadow: 0 0 8px #D0D0D0;
 }
 
+/**
+	This is the styling for the background container
+ */
 #bgcontainer {
 	 background-image: url("../images/inventory.png");
 	 background-size: auto;
@@ -65,6 +68,9 @@ p.footer {
 	 position: relative;
 }
 
+/**
+	This is the styling for the weapon container
+ */
 #weaponContainer {
 	position: absolute;
 	left : 28px;
@@ -73,6 +79,9 @@ p.footer {
 	height: 200px;
 }
 
+/**
+	This is the styling for the gloves container
+ */
 #glovesContainer {
 	position: absolute;
 	left : 105px;
@@ -81,6 +90,9 @@ p.footer {
 	height: 100px;
 }
 
+/**
+	This is the styling for the shield container
+ */
 #shieldContainer {
 	position: absolute;
 	left : 440px;
@@ -89,6 +101,9 @@ p.footer {
 	height: 200px;
 }
 
+/**
+	This is the styling for the boots container
+ */
 #bootsContainer {
 	position: absolute;
 	left : 365px;
@@ -97,6 +112,9 @@ p.footer {
 	height: 100px;
 }
 
+/**
+	This is the styling for the helmet container
+ */
 #helmatContainer {
 	position: absolute;
 	left : 235px;
@@ -105,12 +123,16 @@ p.footer {
 	height: 100px;
 }
 
+/**
+	This is the styling for the chest container
+ */
 #chestContainer {
-	position: absolute;
-	left : 235px;
-	top : 140px;
-	width: 100px;
-	height: 150px;
+    position: absolute;
+    left: 235px;
+    top: 140px;
+    width: 100px;
+    height: 150px;
+}
   
 .footer {
 position: absolute;
