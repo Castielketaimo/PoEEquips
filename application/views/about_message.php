@@ -5,5 +5,4 @@
     <h2><i>We don't own the copyrights to any these of pictures in the project</i></h2>
     <p>In our project, you will be provided with an empty inventory, and then you can choose different gears that
         you like to build your character</p>
-    <img src="/assets/images/inventory.png">
 </div>
