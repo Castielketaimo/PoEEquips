@@ -34,7 +34,7 @@
 * populated selector with presets functional - QL
 * made pictures dynamically fill equipment boxes when selecting presets - QL
 * fixed image sized to fit with inventory slot size - QL
-* implemented catalog, bundle, category view controllers - QL
+* implemented catalog, bundle, category view controllers - QL 
 * ..assets/css/default.css (updated css file) - CL
 * ../view/Welcome_message (added invantory image and divs) - CL
 * ../views/template (moved the footer to footer.php) -CL
