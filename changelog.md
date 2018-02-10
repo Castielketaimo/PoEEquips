@@ -8,6 +8,9 @@
 * Changelog Format: Read from newest to oldest
 
 ## Version 0.1
+### New components
+--------Feb 10, 2018--------
+* Catalog Controller and View - QL
 
 ### New components
 --------Feb 9, 2018--------
