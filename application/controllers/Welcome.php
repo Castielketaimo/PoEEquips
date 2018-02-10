@@ -20,7 +20,14 @@ class Welcome extends Application
 	public function index()
 	{
 		$this->data['pagebody'] = 'welcome_message';
+
+			//	$this->load->model('themenu');
+		//		$all_the_items = $this->themenu->all();
+
+	//			$subset = $this->themenu->where('category','entree');
+		$this->load->view("partials/_menubar");
 		$this->render();
 	}
 
+}
 }
