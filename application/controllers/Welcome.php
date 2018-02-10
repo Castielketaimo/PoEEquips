@@ -17,17 +17,21 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-
-	/**
-     * this controller get the data from welcome_message view, menubar and footer view and display them
-     */
 	public function index()
 	{
+		$this->load->library('parser');
+
+		$baseurl = base_url();
+		$this->data = array(
+			'urlLink' => $baseurl
+		);
 		$this->data['pagebody'] = 'welcome_message';
 		$this->load->view("partials/_menubar");
 		$this->render();
 		$this->load->view("partials/_footer");
+//
 	}
+
 
 }
 

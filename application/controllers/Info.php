@@ -21,36 +21,48 @@ class Info extends Application
 	{
   }
 
-  public function category(&$key)
+  public function category($key = -1)
   {
-		if(isset($key)){
+		if($key === -1){
 			$this->load->model('Categories');
 			$record = $this->Categories->all();
 			header("Content-type: application/json");
 			echo json_encode($record);
+		} else {
+			$this->load->model('Categories');
+			$record = $this->Categories->get($key);
+			header("Content-type: application/json");
+			echo json_encode($record);
 		}
-
-		// if ($key === NULL)
-		// {
-		// 	$this->load->model('Categories');
-		// 	$all_the_items = $this->Categories->all();
-		// 	$data['all'] = $all_the_items;
-		// 	return $this->load->view('categories_display', $data);
-		// } else {
-		// 	$this->load->model('Categories');
-		// 	$item = $this->Categories->where('Name', $key);
-		// 	$data['single'] = $item;
-		// 	return $this->load->view('categories_display', $data);
-		// }
   }
 
-  public function catalog($key)
+  public function catalog($key = -1)
   {
-
+		if($key === -1){
+			$this->load->model('Accessories');
+			$record = $this->Accessories->all();
+			header("Content-type: application/json");
+			echo json_encode($record);
+		} else {
+			$this->load->model('Accessories');
+			$record = $this->Accessories->get($key);
+			header("Content-type: application/json");
+			echo json_encode($record);
+		}
   }
 
-  public function bundle($key)
+  public function bundle($key = -1)
   {
-
+		if($key === -1){
+			$this->load->model('Presets');
+			$record = $this->Presets->all();
+			header("Content-type: application/json");
+			echo json_encode($record);
+		} else {
+			$this->load->model('Presets');
+			$record = $this->Presets->get($key);
+			header("Content-type: application/json");
+			echo json_encode($record);
+		}
   }
 }
