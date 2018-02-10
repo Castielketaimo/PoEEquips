@@ -21,7 +21,7 @@ class Info extends Application
 	{
   }
 
-  public function category(&$key)
+  public function category(&$key = 0)
   {
 		if(isset($key)){
 			$this->load->model('Categories');
@@ -44,13 +44,23 @@ class Info extends Application
 		// }
   }
 
-  public function catalog($key)
+  public function catalog($key = 0)
   {
-
+	  if(isset($key)){
+		  $this->load->model('Accessories');
+		  $record = $this->Accessories->all();
+		  header("Content-type: application/json");
+		  echo json_encode($record);
+	  }
   }
 
-  public function bundle($key)
+  public function bundle($key = 0)
   {
-
+	  if(isset($key)){
+		  $this->load->model('Presets');
+		  $record = $this->Presets->all();
+		  header("Content-type: application/json");
+		  echo json_encode($record);
+	  }
   }
 }
