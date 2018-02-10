@@ -54,6 +54,64 @@ p.footer {
 	box-shadow: 0 0 8px #D0D0D0;
 }
 
+#bgcontainer {
+	 background-image: url("../images/inventory.png");
+	 background-size: auto;
+	 width: 600px;
+	 height: 400px;
+	 top: 50%;
+	 left: 20%;
+	 background-repeat: no-repeat;
+	 position: relative;
+}
+
+#weaponContainer {
+	position: absolute;
+	left : 28px;
+	top : 35px;
+	width : 100px;
+	height: 200px;
+}
+
+#glovesContainer {
+	position: absolute;
+	left : 105px;
+	top : 255px;
+	width: 100px;
+	height: 100px;
+}
+
+#shieldContainer {
+	position: absolute;
+	left : 440px;
+	top : 35px;
+	width : 100px;
+	height: 200px;
+}
+
+#bootsContainer {
+	position: absolute;
+	left : 365px;
+	top : 255px;
+	width: 100px;
+	height: 100px;
+}
+
+#helmatContainer {
+	position: absolute;
+	left : 235px;
+	top : 20px;
+	width: 100px;
+	height: 100px;
+}
+
+#chestContainer {
+	position: absolute;
+	left : 235px;
+	top : 140px;
+	width: 100px;
+	height: 150px;
+  
 .footer {
 position: absolute;
 left: 0;
