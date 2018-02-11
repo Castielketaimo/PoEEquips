@@ -12,6 +12,8 @@
 * Catalog Controller and View - QL
 
 ### New components
+--------Feb 10, 2018--------
+* new image - logo.png
 --------Feb 9, 2018--------
 * ../controller/Info.php -CL
 * ../views/partials/menubar.php -CL
@@ -31,6 +33,8 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* move the image css to css files - RT
+* updated logo pictures and web app title - RT
 * updated menu items (delete link to Json files and replace with catalog) -CL
 * added links to menu dropDownItems -CL
 * updated ../view/about_message (Changed the index function to make the page looks nicer) -CL

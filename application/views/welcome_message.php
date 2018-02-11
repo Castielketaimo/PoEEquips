@@ -23,39 +23,36 @@ function updateContainer(key) {
 function updateContainers(key) {
 	$.getJSON( "{urlLink}info/catalog/" + key, function( data ) {
 		var imagePath = '/assets/images/' + data.ImagePath;
-		// $("#helmatContainer").css('background-image', "url('/assets/images/helmets/BoneHelmet.png')");
-
 		switch (data.CategoryId)
 			{
 				case "1":
 					$("#helmatContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#helmatContainer").css("background-repeat", 'no-repeat');
-					$("#helmatContainer").css("background-size", 'contain');
+                    // $("#helmatContainer").css("background-repeat", 'no-repeat');
+                    // $("#helmatContainer").css("background-size", 'contain');
 					break;
 				case "2":
 					$("#chestContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#chestContainer").css("background-repeat", 'no-repeat');
-					$("#chestContainer").css("background-size", 'contain');
+                    // $("#chestContainer").css("background-repeat", 'no-repeat');
+                    // $("#chestContainer").css("background-size", 'contain');
 					break;
 				case "3":
 					$("#shieldContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#shieldContainer").css("background-repeat", 'no-repeat');
-					$("#shieldContainer").css("background-size", 'contain');
-					break;
+                    //$("#shieldContainer").css("background-repeat", 'no-repeat');
+                    //$("#shieldContainer").css("background-size", 'contain');
 				case "4":
 					$("#weaponContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#weaponContainer").css("background-repeat", 'no-repeat');
-					$("#weaponContainer").css("background-size", 'contain');
+                    //$("#weaponContainer").css("background-repeat", 'no-repeat');
+                    //$("#weaponContainer").css("background-size", 'contain');
 					break;
 				case "5":
 					$("#bootsContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#bootsContainer").css("background-repeat", 'no-repeat');
-					$("#bootsContainer").css("background-size", 'contain');
+                    //$("#bootsContainer").css("background-repeat", 'no-repeat');
+                    //$("#bootsContainer").css("background-size", 'contain');
 					break;
 				case "6":
 					$("#glovesContainer").css("background-image", 'url(' + imagePath + ')');
-					$("#glovesContainer").css("background-repeat", 'no-repeat');
-					$("#glovesContainer").css("background-size", 'contain');
+                    //$("#glovesContainer").css("background-repeat", 'no-repeat');
+                    //$("#glovesContainer").css("background-size", 'contain');
 					break;
 				default:
 					break;
