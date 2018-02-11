@@ -39,15 +39,6 @@ code {
 	margin: 0 15px 0 15px;
 }
 
-p.footer {
-	text-align: right;
-	font-size: 11px;
-	border-top: 1px solid #D0D0D0;
-	line-height: 32px;
-	padding: 0 10px 0 10px;
-	margin: 20px 0 0 0;
-}
-
 #container {
 	margin: 10px;
 	border: 1px solid #D0D0D0;
@@ -65,14 +56,17 @@ p.footer {
 	 position: relative;
 }
 
+.inventoryContainers {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 #weaponContainer {
 	position: absolute;
 	left : 28px;
 	top : 35px;
 	width : 100px;
 	height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #glovesContainer {
@@ -81,8 +75,6 @@ p.footer {
 	top : 255px;
 	width: 100px;
 	height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #shieldContainer {
@@ -91,8 +83,6 @@ p.footer {
 	top : 35px;
 	width : 100px;
 	height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #bootsContainer {
@@ -101,8 +91,6 @@ p.footer {
 	top : 255px;
 	width: 100px;
 	height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #helmatContainer {
@@ -111,8 +99,6 @@ p.footer {
 	top : 20px;
 	width: 100px;
 	height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #chestContainer {
@@ -121,16 +107,4 @@ p.footer {
 	top : 140px;
 	width: 100px;
 	height: 150px;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
-
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    overflow:hidden;
-}
-

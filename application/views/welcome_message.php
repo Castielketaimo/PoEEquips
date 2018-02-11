@@ -3,6 +3,9 @@
 var strength = 0;
 var dexterity = 0;
 var intelligence = 0;
+/*
+when page loads, we populate the dropdown menu with all the presets in the database
+*/
 $().ready(function() {
     $.getJSON( "{urlLink}info/bundle", function( data ) {
       $.each( data, function( key, val ) {
@@ -10,6 +13,10 @@ $().ready(function() {
       });
     });
 });
+
+/*
+we update each container one by one based on the selected id, sum up the stats
+*/
 function updateContainer(key) {
     $.getJSON( "{urlLink}info/bundle/" + key, function( data ) {
         strength = 0;
@@ -23,6 +30,10 @@ function updateContainer(key) {
         updateContainers(data.Gloves);
     });
 }
+
+/*
+  we update a single container based on the preset
+*/
 function updateContainers(key) {
     $.getJSON( "{urlLink}info/catalog/" + key, function( data ) {
         var imagePath = '/assets/images/' + data.ImagePath;
@@ -34,33 +45,21 @@ function updateContainers(key) {
             {
                 case "1":
                     $("#helmatContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#helmatContainer").css("background-repeat", 'no-repeat');
-                    $("#helmatContainer").css("background-size", 'contain');
                     break;
                 case "2":
                     $("#chestContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#chestContainer").css("background-repeat", 'no-repeat');
-                    $("#chestContainer").css("background-size", 'contain');
                     break;
                 case "3":
                     $("#shieldContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#shieldContainer").css("background-repeat", 'no-repeat');
-                    $("#shieldContainer").css("background-size", 'contain');
                     break;
                 case "4":
                     $("#weaponContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#weaponContainer").css("background-repeat", 'no-repeat');
-                    $("#weaponContainer").css("background-size", 'contain');
                     break;
                 case "5":
                     $("#bootsContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#bootsContainer").css("background-repeat", 'no-repeat');
-                    $("#bootsContainer").css("background-size", 'contain');
                     break;
                 case "6":
                     $("#glovesContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#glovesContainer").css("background-repeat", 'no-repeat');
-                    $("#glovesContainer").css("background-size", 'contain');
                     break;
                 default:
                     break;
@@ -68,6 +67,9 @@ function updateContainers(key) {
             updateStat();
     });
 }
+/*
+updated the stats and display it 
+*/
 function updateStat() {
     $("#strength").text("Strength: " + strength)
     $("#dexterity").text("Dexterity: " + dexterity)
@@ -88,17 +90,17 @@ function updateStat() {
     <p id="intelligence">Intelligence:</p>
 </div>
     <div id="bgcontainer">
-        <div id = "weaponContainer">
+        <div id = "weaponContainer" class = "inventoryContainers">
         </div>
-        <div id = "glovesContainer">
+        <div id = "glovesContainer" class = "inventoryContainers">
         </div>
-        <div id = "shieldContainer">
+        <div id = "shieldContainer" class = "inventoryContainers">
         </div>
-        <div id = "bootsContainer">
+        <div id = "bootsContainer" class = "inventoryContainers">
         </div>
-        <div id = "helmatContainer">
+        <div id = "helmatContainer" class = "inventoryContainers">
         </div>
-        <div id = "chestContainer">
+        <div id = "chestContainer" class = "inventoryContainers">
         </div>
     </div>
 </div>

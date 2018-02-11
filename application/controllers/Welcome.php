@@ -25,11 +25,6 @@ class Welcome extends Application
 			'urlLink' => $baseurl
 		);
 		$this->data['pagebody'] = 'welcome_message';
-		$this->load->view("partials/_menubar");
 		$this->render();
-		$this->load->view("partials/_footer");
 	}
-
-
 }
-

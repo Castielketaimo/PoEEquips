@@ -34,6 +34,16 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* updated ../views/welcome_message (added comments for all the functions) -CL
+* updated ../controller/info (added comments for all the functions) -CL
+* updated ../views/partials/footer (added link to json files) -CL
+* updated ../public/assets/css/default (deleted footer style as we using bootstrap) -CL
+* updated ../views/template (used {menubar} and {footer} to place partial view in order) -CL
+* updated ../views/partials/footer (use new bootstrap template to make it looks good) -CL
+* updated ../controllers/About (only used render function instead load partial views) - CL
+* updated ../controllers/Catalog (only used render function instead load partial views) - CL
+* updated ../controllers/Welcome (only used render function instead load partial views) - CL
+* updated ../core/MY_Controller render function (all the partial view render in correct order) -CL
 * move the image css to css files - RT
 * updated logo pictures and web app title - RT
 * updated ../view/welcome_message (changed the dropdown menu items name) -CL
