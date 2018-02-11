@@ -33,34 +33,22 @@ function updateContainers(key) {
         switch (data.CategoryId)
             {
                 case "1":
-                    $("#helmatContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#helmatContainer").css("background-repeat", 'no-repeat');
-                    $("#helmatContainer").css("background-size", 'contain');
+                    $("#helmatContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 case "2":
-                    $("#chestContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#chestContainer").css("background-repeat", 'no-repeat');
-                    $("#chestContainer").css("background-size", 'contain');
+                    $("#chestContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 case "3":
-                    $("#shieldContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#shieldContainer").css("background-repeat", 'no-repeat');
-                    $("#shieldContainer").css("background-size", 'contain');
+                    $("#shieldContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 case "4":
-                    $("#weaponContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#weaponContainer").css("background-repeat", 'no-repeat');
-                    $("#weaponContainer").css("background-size", 'contain');
+                    $("#weaponContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 case "5":
-                    $("#bootsContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#bootsContainer").css("background-repeat", 'no-repeat');
-                    $("#bootsContainer").css("background-size", 'contain');
+                    $("#bootsContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 case "6":
-                    $("#glovesContainer").css("background-image", 'url(' + imagePath + ')');
-                    $("#glovesContainer").css("background-repeat", 'no-repeat');
-                    $("#glovesContainer").css("background-size", 'contain');
+                    $("#glovesContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
                     break;
                 default:
                     break;
@@ -75,30 +63,31 @@ function updateStat() {
 }
 </script>
 <div id="body">
+    <div class="stat">
+        <p id="strength">Strength: </p>
+        <p id="dexterity">Dexterity: </p>
+        <p id="intelligence">Intelligence:</p>
+    </div>
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Presets
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropDownItems">
       </div>
-</div>
-<div class="stat">
-    <p id="strength">Strength: </p>
-    <p id="dexterity">Dexterity: </p>
-    <p id="intelligence">Intelligence:</p>
-</div>
+    </div>
+
     <div id="bgcontainer">
-        <div id = "weaponContainer">
+        <div id = "weaponContainer" data-toggle="tooltip" title="">
         </div>
-        <div id = "glovesContainer">
+        <div id = "glovesContainer" data-toggle="tooltip" title="">
         </div>
-        <div id = "shieldContainer">
+        <div id = "shieldContainer" data-toggle="tooltip" title="">
         </div>
-        <div id = "bootsContainer">
+        <div id = "bootsContainer" data-toggle="tooltip" title="">
         </div>
-        <div id = "helmatContainer">
+        <div id = "helmatContainer" data-toggle="tooltip" title="">
         </div>
-        <div id = "chestContainer">
+        <div id = "chestContainer" data-toggle="tooltip" title="">
         </div>
     </div>
 </div>

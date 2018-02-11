@@ -34,6 +34,13 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* changed stat colors and moved presets to under the stats for welcome_message view -QL
+* fixed _menubar view controller to not highlight Home button for all pages -QL
+* fixed Memory_Model to be work with where Query -QL
+* added striped table for Catalog controller -QL
+* updated code for extracting Categories.csv with foreign key in Catalog Controller -QL
+* removed redundant code in welcome_message view for css -QL
+* centered equipment page on homepage css -QL
 * move the image css to css files - RT
 * updated logo pictures and web app title - RT
 * updated ../view/welcome_message (changed the dropdown menu items name) -CL
