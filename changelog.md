@@ -31,6 +31,9 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* updated ../view/welcome_message (changed the dropdown menu items name) -CL
+* updated ../view/welcome_message (added stats display) -CL
+* updated ../view/partial/menubar (updated link of home and logo) -CL
 * updated catalog controller to correctly display Category - QL
 * updated menu items (delete link to Json files and replace with catalog) -CL
 * added links to menu dropDownItems -CL
