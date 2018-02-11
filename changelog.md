@@ -10,17 +10,17 @@
 
 ### New components
 -------------------------------------------------------------------------------------------------
-####Feb 10, 2018
+#### Feb 10, 2018
 * Catalog Controller and View - QL
 * new image - logo.png -RT
 * new favicon - favicon.png -RT
 -------------------------------------------------------------------------------------------------
-####Feb 9, 2018
+#### Feb 9, 2018
 * ../controller/Info.php -CL
 * ../views/partials/menubar.php -CL
 * ../veiws/partials/footer.php -CL
 -------------------------------------------------------------------------------------------------
-####Feb 8, 2018
+#### Feb 8, 2018
 * 3 models - QL
 * Accessories.php, Categories.php, Presets.php
 * 3 controllers - QL
@@ -66,7 +66,7 @@
 * added links to menu dropDownItems -CL
 * updated ../view/about_message (Changed the index function to make the page looks nicer) -CL
 -------------------------------------------------------------------------------------------------
-####Feb 9,2018
+#### Feb 9,2018
 * updated Presets/ Categories/ Accessories to have gloves category - QL
 * added selector functionality for presets on front page - QL
 * populated selector with presets functional - QL
