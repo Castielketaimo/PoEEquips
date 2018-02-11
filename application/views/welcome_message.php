@@ -68,7 +68,7 @@ function updateContainers(key) {
     });
 }
 /*
-updated the stats and display it 
+updated the stats and display it
 */
 function updateStat() {
     $("#strength").text("Strength: " + strength)
@@ -91,17 +91,17 @@ function updateStat() {
     </div>
 
     <div id="bgcontainer">
-        <div id = "weaponContainer" data-toggle="tooltip" title="">
+        <div id = "weaponContainer" data-toggle="tooltip" title="" class = "inventoryContainers">
         </div>
-        <div id = "glovesContainer" data-toggle="tooltip" title="">
+        <div id = "glovesContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
         </div>
-        <div id = "shieldContainer" data-toggle="tooltip" title="">
+        <div id = "shieldContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
         </div>
-        <div id = "bootsContainer" data-toggle="tooltip" title="">
+        <div id = "bootsContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
         </div>
-        <div id = "helmatContainer" data-toggle="tooltip" title="">
+        <div id = "helmatContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
         </div>
-        <div id = "chestContainer" data-toggle="tooltip" title="">
+        <div id = "chestContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
         </div>
     </div>
 </div>

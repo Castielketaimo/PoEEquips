@@ -7,19 +7,20 @@
 * Changelog Format: Read from newest to oldest
 
 ## Version 0.1
-### New components
---------Feb 10, 2018--------
-* Catalog Controller and View - QL
 
 ### New components
---------Feb 10, 2018--------
-* new image - logo.png
-* new favicon - favicon.png
---------Feb 9, 2018--------
+-------------------------------------------------------------------------------------------------
+####Feb 10, 2018
+* Catalog Controller and View - QL
+* new image - logo.png -RT
+* new favicon - favicon.png -RT
+-------------------------------------------------------------------------------------------------
+####Feb 9, 2018
 * ../controller/Info.php -CL
 * ../views/partials/menubar.php -CL
 * ../veiws/partials/footer.php -CL
---------Feb 8, 2018--------
+-------------------------------------------------------------------------------------------------
+####Feb 8, 2018
 * 3 models - QL
 * Accessories.php, Categories.php, Presets.php
 * 3 controllers - QL
@@ -33,9 +34,12 @@
 * about.php controllers and about_message view - RT
 
 ### Updated components
---------Feb 10,2018-------
+#### Feb 11,2018
+* fixed ../views/template (inventoryContainers image repeat) -CL
+-------------------------------------------------------------------------------------------------
+#### Feb 10,2018
 * changed stat colors and moved presets to under the stats for welcome_message view -QL
-* fixed _menubar view controller to not highlight Home button for all pages -QL
+* fixed menubar view controller to not highlight Home button for all pages -QL
 * fixed Memory_Model to be work with where Query -QL
 * added striped table for Catalog controller -QL
 * updated code for extracting Categories.csv with foreign key in Catalog Controller -QL
@@ -60,7 +64,8 @@
 * updated menu items (delete link to Json files and replace with catalog) -CL
 * added links to menu dropDownItems -CL
 * updated ../view/about_message (Changed the index function to make the page looks nicer) -CL
---------Feb 9,2018--------
+-------------------------------------------------------------------------------------------------
+####Feb 9,2018
 * updated Presets/ Categories/ Accessories to have gloves category - QL
 * added selector functionality for presets on front page - QL
 * populated selector with presets functional - QL
