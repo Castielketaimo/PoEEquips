@@ -40,7 +40,12 @@ class Catalog extends Application
 			$Dexterity = $allItems[$i]->Dexterity;
 			$Intelligence = $allItems[$i]->Intelligence;
 			$ImagePath = $allItems[$i]->ImagePath;
-			$CategoryId = $allCategories[$allItems[$i]->CategoryId]->Name;
+
+			//Queries Category and returns rows matching CategoryId
+			$CategoryRowQuery = $this->Categories->some('CategoryId', $allItems[$i]->CategoryId);
+
+			//Store catagory name
+			$CategoryName = $CategoryRowQuery[0]->Name;
 
 			//Template for accessories data to replace
 			$rowTemplate = "
@@ -51,7 +56,7 @@ class Catalog extends Application
 					<td>{Dexterity}</td>
 					<td>{Intelligence}</td>
 					<td><img src='/assets/images/{ImagePath}' alt='{ItemName} at /assets/images/{ImagePath}'/></td>
-					<td>{CategoryId}</td>
+					<td>{CategoryName}</td>
 				</tr>
 			";
 
@@ -63,7 +68,7 @@ class Catalog extends Application
 				'Dexterity' =>$Dexterity,
 				'Intelligence' => $Intelligence,
 				'ImagePath' => $ImagePath,
-				'CategoryId' => $CategoryId
+				'CategoryName' => $CategoryName
 			);
 
 			//Parse rowTemplate and replace each {} with the data from before and add it as a string into the itemContainer for later use
@@ -72,16 +77,16 @@ class Catalog extends Application
 
 		//Template for Category Headers
 		$headerTemplate= "
-			<table class='table'>
-				<tr>
-					<th>Accessories Id</th>
-					<th>Item Name</th>
-					<th>Strength</th>
-					<th>Dexterity</th>
-					<th>Intelligence</th>
-					<th>Image</th>
-					<th>Category</th>
-				</tr>
+			<table class='table table-striped'>
+					<tr>
+						<th>Accessories Id</th>
+						<th>Item Name</th>
+						<th>Strength</th>
+						<th>Dexterity</th>
+						<th>Intelligence</th>
+						<th>Image</th>
+						<th>Category</th>
+					</tr>
 				{tableItems}
 			</table>
 		";

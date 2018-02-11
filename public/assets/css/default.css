@@ -51,9 +51,10 @@ code {
 	 width: 600px;
 	 height: 400px;
 	 top: 50%;
-	 left: 20%;
 	 background-repeat: no-repeat;
 	 position: relative;
+	 margin-left: auto;
+	 margin-right: auto;
 }
 
 .inventoryContainers {
@@ -107,4 +108,25 @@ code {
 	top : 140px;
 	width: 100px;
 	height: 150px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+
+#strength{
+	color: red;
+}
+
+#dexterity{
+	color: green;
+}
+
+#intelligence{
+	color: blue;
 }
