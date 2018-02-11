@@ -12,6 +12,9 @@
 * Catalog Controller and View - QL
 
 ### New components
+--------Feb 10, 2018--------
+* new image - logo.png
+* new favicon - favicon.png
 --------Feb 9, 2018--------
 * ../controller/Info.php -CL
 * ../views/partials/menubar.php -CL
@@ -31,6 +34,8 @@
 
 ### Updated components
 --------Feb 10,2018-------
+* move the image css to css files - RT
+* updated logo pictures and web app title - RT
 * updated ../view/welcome_message (changed the dropdown menu items name) -CL
 * updated ../view/welcome_message (added stats display) -CL
 * updated ../view/partial/menubar (updated link of home and logo) -CL

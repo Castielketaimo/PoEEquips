@@ -71,6 +71,8 @@ p.footer {
 	top : 35px;
 	width : 100px;
 	height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #glovesContainer {
@@ -79,6 +81,8 @@ p.footer {
 	top : 255px;
 	width: 100px;
 	height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #shieldContainer {
@@ -87,6 +91,8 @@ p.footer {
 	top : 35px;
 	width : 100px;
 	height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #bootsContainer {
@@ -95,6 +101,8 @@ p.footer {
 	top : 255px;
 	width: 100px;
 	height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #helmatContainer {
@@ -103,6 +111,8 @@ p.footer {
 	top : 20px;
 	width: 100px;
 	height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #chestContainer {
@@ -111,12 +121,16 @@ p.footer {
 	top : 140px;
 	width: 100px;
 	height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .footer {
-position: absolute;
-left: 0;
-bottom: 0;
-height: 50px;
-width: 100%;
-overflow:hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
 }
+

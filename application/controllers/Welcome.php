@@ -20,7 +20,6 @@ class Welcome extends Application
 	public function index()
 	{
 		$this->load->library('parser');
-
 		$baseurl = base_url();
 		$this->data = array(
 			'urlLink' => $baseurl
@@ -29,8 +28,8 @@ class Welcome extends Application
 		$this->load->view("partials/_menubar");
 		$this->render();
 		$this->load->view("partials/_footer");
-//
 	}
 
 
 }
+

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is a model for Accessories. The data will come from Presets.csv
+ * This is Presets's model. This model will get all the data from Presets.csv
  * ------------------------------------------------------------------------
  */
 class Presets extends CSV_Model
