@@ -6,7 +6,7 @@
 * Team conventions: Allman notation, markdown for changelog  
 * Changelog Format: Read from newest to oldest
 
-## Version 0.1
+## Version 1.0
 
 ### New components
 -------------------------------------------------------------------------------------------------
@@ -35,6 +35,7 @@
 
 ### Updated components
 #### Feb 11,2018
+* Update the version of the app for first release - NC
 * fixed ../views/template (inventoryContainers image repeat) -CL
 -------------------------------------------------------------------------------------------------
 #### Feb 10,2018
