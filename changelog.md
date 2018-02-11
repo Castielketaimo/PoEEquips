@@ -14,6 +14,7 @@
 ### New components
 --------Feb 10, 2018--------
 * new image - logo.png
+* new favicon - favicon.png
 --------Feb 9, 2018--------
 * ../controller/Info.php -CL
 * ../views/partials/menubar.php -CL
