@@ -2,9 +2,9 @@
 
 /**
  * Generic data access model, with data stored in memory only.
- * 
+ *
  * Single "key" only, at this point.
- * 
+ *
  * Provide additional base models for different persistence choices
  * by extending this, and over-riding the load() and store() methods.
  *
@@ -194,7 +194,7 @@ class Memory_Model extends CI_Model implements DataMapper {
 
     /**
      *  Return filtered records as an array of records.
-     * 
+     *
      * @param type $what	Field name to select by
      * @param type $which	Value to select
      * @return type
@@ -202,7 +202,7 @@ class Memory_Model extends CI_Model implements DataMapper {
     function some($what, $which) {
 	$results = array();
 	foreach ($this->_data as $key => $record)
-	    if ($record[$what] == $which)
+	    if ($record->$what == $which)
 		$results[] = $record;
 	return $results;
     }

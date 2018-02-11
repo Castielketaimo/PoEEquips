@@ -19,8 +19,12 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
+		$this->load->library('parser');
+		$baseurl = base_url();
+		$this->data = array(
+			'urlLink' => $baseurl
+		);
 		$this->data['pagebody'] = 'welcome_message';
-		$this->render(); 
+		$this->render();
 	}
-
 }

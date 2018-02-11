@@ -1,14 +1,107 @@
-<h1>Welcome to CodeIgniter!</h1>
+<h1>Welcome to PoEEquips!</h1>
+<script>
+var strength = 0;
+var dexterity = 0;
+var intelligence = 0;
+/*
+when page loads, we populate the dropdown menu with all the presets in the database
+*/
+$().ready(function() {
+    $.getJSON( "{urlLink}info/bundle", function( data ) {
+      $.each( data, function( key, val ) {
+        $("#dropDownItems").append('<li><a class="dropdown-item" href="#" onClick="updateContainer(' + val.PresetId + ')">' + 'Preset ' + val.PresetId + '</a></li>');
+      });
+    });
+});
 
+/*
+we update each container one by one based on the selected id, sum up the stats
+*/
+function updateContainer(key) {
+    $.getJSON( "{urlLink}info/bundle/" + key, function( data ) {
+        strength = 0;
+        dexterity = 0;
+        intelligence = 0;
+        updateContainers(data.Helmet);
+        updateContainers(data.Chest);
+        updateContainers(data.Shields);
+        updateContainers(data.Weapons);
+        updateContainers(data.Boots);
+        updateContainers(data.Gloves);
+    });
+}
+
+/*
+  we update a single container based on the preset
+*/
+function updateContainers(key) {
+    $.getJSON( "{urlLink}info/catalog/" + key, function( data ) {
+        var imagePath = '/assets/images/' + data.ImagePath;
+        // $("#helmatContainer").css('background-image', "url('/assets/images/helmets/BoneHelmet.png')");
+        strength += parseInt(data.Strength);
+        dexterity += parseInt(data.Dexterity);
+        intelligence += parseInt(data.Intelligence);
+        switch (data.CategoryId)
+            {
+                case "1":
+                    $("#helmatContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                case "2":
+                    $("#chestContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                case "3":
+                    $("#shieldContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                case "4":
+                    $("#weaponContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                case "5":
+                    $("#bootsContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                case "6":
+                    $("#glovesContainer").css("background-image", 'url(' + imagePath + ')').attr("title", data.Name + "\n" + "Str: " + data.Strength + "\n" + "Dex: " + data.Dexterity + "\n" + "Int: " + data.Intelligence);
+                    break;
+                default:
+                    break;
+            }
+            updateStat();
+    });
+}
+/*
+updated the stats and display it
+*/
+function updateStat() {
+    $("#strength").text("Strength: " + strength)
+    $("#dexterity").text("Dexterity: " + dexterity)
+    $("#intelligence").text("Intelligence: " + intelligence)
+}
+</script>
 <div id="body">
-	<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+    <div class="stat">
+        <p id="strength">Strength: </p>
+        <p id="dexterity">Dexterity: </p>
+        <p id="intelligence">Intelligence:</p>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Presets
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropDownItems">
+      </div>
+    </div>
 
-	<p>If you would like to edit this page you'll find it located at:</p>
-	<code>application/views/welcome_message.php</code>
-
-	<p>The corresponding controller for this page is found at:</p>
-	<code>application/controllers/Welcome.php</code>
-
-	<p>If you are exploring CodeIgniter for the very first time, you should 
-		start by reading the <a href="http://www.codeigniter.com/user_guide/">User Guide</a>.</p>
+    <div id="bgcontainer">
+        <div id = "weaponContainer" data-toggle="tooltip" title="" class = "inventoryContainers">
+        </div>
+        <div id = "glovesContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
+        </div>
+        <div id = "shieldContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
+        </div>
+        <div id = "bootsContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
+        </div>
+        <div id = "helmatContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
+        </div>
+        <div id = "chestContainer" data-toggle="tooltip" title=""  class = "inventoryContainers">
+        </div>
+    </div>
 </div>
