@@ -105,9 +105,7 @@ class Catalog extends Application
 		);
 
 		$this->data['pagebody'] = 'catalog_display';
-		$this->load->view("partials/_menubar");
 		$this->render();
-		$this->load->view("partials/_footer");
 //
 	}
 

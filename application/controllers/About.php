@@ -10,12 +10,11 @@ class About extends Application
         parent::__construct();
     }
 
+//This function just render the page
     public function index()
     {
         $this->data['pagebody'] = 'about_message';
-        $this->load->view("partials/_menubar");
         $this->render();
-        $this->load->view("partials/_footer");
     }
 
 }

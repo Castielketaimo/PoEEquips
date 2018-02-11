@@ -3,6 +3,9 @@
 var strength = 0;
 var dexterity = 0;
 var intelligence = 0;
+/*
+when page loads, we populate the dropdown menu with all the presets in the database
+*/
 $().ready(function() {
     $.getJSON( "{urlLink}info/bundle", function( data ) {
       $.each( data, function( key, val ) {
@@ -10,6 +13,10 @@ $().ready(function() {
       });
     });
 });
+
+/*
+we update each container one by one based on the selected id, sum up the stats
+*/
 function updateContainer(key) {
     $.getJSON( "{urlLink}info/bundle/" + key, function( data ) {
         strength = 0;
@@ -23,6 +30,10 @@ function updateContainer(key) {
         updateContainers(data.Gloves);
     });
 }
+
+/*
+  we update a single container based on the preset
+*/
 function updateContainers(key) {
     $.getJSON( "{urlLink}info/catalog/" + key, function( data ) {
         var imagePath = '/assets/images/' + data.ImagePath;
@@ -56,6 +67,9 @@ function updateContainers(key) {
             updateStat();
     });
 }
+/*
+updated the stats and display it 
+*/
 function updateStat() {
     $("#strength").text("Strength: " + strength)
     $("#dexterity").text("Dexterity: " + dexterity)

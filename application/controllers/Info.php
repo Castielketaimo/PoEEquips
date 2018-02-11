@@ -21,6 +21,10 @@ class Info extends Application
 	{
   }
 
+	/*
+	Load all categories model and return it as a Json file in the browser when no parameter passed
+	Load single category and return it as a Json files in the browser if a parameter is passed
+	*/
   public function category($key = -1)
   {
 		if($key === -1){
@@ -36,6 +40,10 @@ class Info extends Application
 		}
   }
 
+	/*
+	Load all Catalog model and return it as a Json file in the browser when no parameter passed
+	Load single catalog and return it as a Json files in the browser if a parameter is passed
+	*/
   public function catalog($key = -1)
   {
 		if($key === -1){
@@ -51,6 +59,10 @@ class Info extends Application
 		}
   }
 
+	/*
+	Load all presets model and return it as a Json file in the browser when no parameter passed
+	Load single preset and return it as a Json files in the browser if a parameter is passed
+	*/
   public function bundle($key = -1)
   {
 		if($key === -1){
