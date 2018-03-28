@@ -10,6 +10,11 @@
 
 ### New components
 -------------------------------------------------------------------------------------------------
+#### March 28, 2018 
+* Created Roles Controller - RT 
+* Added define roles into constant.php - RT 
+* added dropdown roles to menubar - RT
+-------------------------------------------------------------------------------------------------
 #### Feb 10, 2018
 * Catalog Controller and View - QL
 * new image - logo.png -RT
@@ -78,3 +83,4 @@
 * ../views/template (moved the footer to footer.php) -CL
 * ../cotrollers/Welcome.php (load partial and welcome page) -CL
 * gitignore (allowed CSV files in git) -CL
+
