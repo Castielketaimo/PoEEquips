@@ -6,6 +6,19 @@
 * Team conventions: Allman notation, markdown for changelog  
 * Changelog Format: Read from newest to oldest
 
+## Version 2.0
+
+### New components
+-------------------------------------------------------------------------------------------------
+#### Mar 28, 2018
+* Custom.php - CL
+* custom_creation.php -CL
+
+### Updated components
+-------------------------------------------------------------------------------------------------
+#### Mar 28, 2018
+* Info.php (Added validate function checkchoice, when the key passeed in not in the database, no json will be encoded.) - CL
+* menubar.php (Added link to custom page) -CL
 ## Version 1.0
 
 ### New components

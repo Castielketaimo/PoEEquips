@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -7,6 +9,7 @@
       <li><a href="/welcome">Home</a></li>
       <li><a href="/catalog">Catalog</a></li>
       <li><a href="/about">About</a></li>
+      <li><a href="/custom">Custom</a></li>
     </ul>
   </div>
 </nav>
