@@ -13,6 +13,9 @@
 #### Mar 28, 2018
 * Custom.php - CL
 * custom_creation.php -CL
+* Created Roles Controller - RT 
+* Added define roles into constant.php - RT 
+* added dropdown roles to menubar - RT
 
 ### Updated components
 -------------------------------------------------------------------------------------------------
@@ -91,3 +94,4 @@
 * ../views/template (moved the footer to footer.php) -CL
 * ../cotrollers/Welcome.php (load partial and welcome page) -CL
 * gitignore (allowed CSV files in git) -CL
+
