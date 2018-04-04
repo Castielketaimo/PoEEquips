@@ -21,6 +21,8 @@ class Application extends CI_Controller
 	{
 		parent::__construct();
 
+		// load session so we can use later
+		$this->load->library('session');
 		//  Set basic view parameters
 		$this->data = array ();
 
