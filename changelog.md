@@ -11,7 +11,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr 6, 2018
-* Added Stat validation for empty entries
+* Added Stat validation for empty entries - QL
 * Fixed Memory_Model for catalog - QL
 * Updated custom controller to process preset adding, and editing to csv files- QL
 * Replaced Memory_Model with a functional version - QL
