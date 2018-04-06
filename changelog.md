@@ -11,6 +11,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr 6, 2018
+* Fixed Memory_Model for catalog - QL
 * Updated custom controller to process preset adding, and editing to csv files- QL
 * Replaced Memory_Model with a functional version - QL
 * Updated custom_creation work with new controller methods - QL
