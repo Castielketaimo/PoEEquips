@@ -95,9 +95,15 @@ function updateContainer(key) {
 function updateContainers(key) {
     $.getJSON( "{urlLink}info/catalog/" + key, function( data ) {
         var imagePath = '/assets/images/' + data.ImagePath;
-        strength += parseInt(data.Strength);
-        dexterity += parseInt(data.Dexterity);
-        intelligence += parseInt(data.Intelligence);
+        if(!isNaN(data.Strength)) {
+            strength += parseInt(data.Strength);
+        }
+        if(!isNaN(data.Dexterity)) {
+            dexterity += parseInt(data.Dexterity);
+        }
+        if(!isNaN(data.Intelligence)) {
+            intelligence += parseInt(data.Intelligence);
+        }
         switch (data.CategoryId)
             {
                 case "1":
@@ -137,9 +143,15 @@ function updateContainers(key) {
 function updateContainersOption(key) {
     $.getJSON( "{urlLink}info/catalog/" + key.value, function( data ) {
         var imagePath = '/assets/images/' + data.ImagePath;
-        strength += parseInt(data.Strength);
-        dexterity += parseInt(data.Dexterity);
-        intelligence += parseInt(data.Intelligence);
+        if(!isNaN(data.Strength)) {
+            strength += parseInt(data.Strength);
+        }
+        if(!isNaN(data.Dexterity)) {
+            dexterity += parseInt(data.Dexterity);
+        }
+        if(!isNaN(data.Intelligence)) {
+            intelligence += parseInt(data.Intelligence);
+        }
         switch (data.CategoryId)
             {
                 case "1":
