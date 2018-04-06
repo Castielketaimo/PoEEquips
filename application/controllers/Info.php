@@ -38,7 +38,7 @@ class Info extends Application
 			echo json_encode($record);
 		}
   }
-  
+
   public function checkChoice($category, $selection)
   {
 	  if($category === "bundle"){
@@ -79,7 +79,7 @@ class Info extends Application
 			header("Content-type: application/json");
 			echo json_encode($record);
 		}
-	  
+
   }
 
 
@@ -95,14 +95,14 @@ class Info extends Application
 		$record = $this->Presets->all();
 		header("Content-type: application/json");
 		echo json_encode($record);
-		return;	
+		return;
 	};
-		
+
 	if($this->checkChoice("bundle",$key) == true){
 		$this->load->model('Presets');
 		$record = $this->Presets->get($key);
 		header("Content-type: application/json");
 		echo json_encode($record);
-	};	
+	};
   }
 }
