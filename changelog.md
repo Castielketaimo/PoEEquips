@@ -11,6 +11,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr 6, 2018
+* Added Stat validation for empty entries - QL
 * Fixed Memory_Model for catalog - QL
 * Updated custom controller to process preset adding, and editing to csv files- QL
 * Replaced Memory_Model with a functional version - QL
@@ -21,8 +22,8 @@
 #### Mar 28, 2018
 * Custom.php - CL
 * custom_creation.php -CL
-* Created Roles Controller - RT 
-* Added define roles into constant.php - RT 
+* Created Roles Controller - RT
+* Added define roles into constant.php - RT
 * added dropdown roles to menubar - RT
 
 ### Updated components
@@ -102,4 +103,3 @@
 * ../views/template (moved the footer to footer.php) -CL
 * ../cotrollers/Welcome.php (load partial and welcome page) -CL
 * gitignore (allowed CSV files in git) -CL
-
