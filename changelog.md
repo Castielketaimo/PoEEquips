@@ -10,6 +10,11 @@
 
 ### Updated components
 -------------------------------------------------------------------------------------------------
+
+#### Apr 7, 2018
+* added determining user role in custom controller - QL & RT
+* update MY_Controller to display menubar according to user role - QL & RT
+* added {custom} and {updatepreset} button - QL & RT
 #### Apr 6, 2018
 * Commented out var_dump and echo from testing to fix header issue - QL
 * Added Stat validation for empty entries - QL

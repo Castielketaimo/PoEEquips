@@ -67,6 +67,7 @@ $().ready(function() {
     $( "#clearbtn" ).click(function() {
         location.reload();
     });
+
 });
 
 function updateAllContainer(key){
@@ -288,7 +289,9 @@ function updatePreset() {
         <input type="hidden" name="Gloves" value="302"></input> -->
         <input id="submitForm" type="submit" value="Add New Preset"></input>
     </form>
-    <input type="submit" value="Update Preset" onclick="updatePreset()"></input>
+    <input type="hidden" name="admin" value=""/>
+<!--    <input type="submit" value="Update Preset" onclick="updatePreset()"></input>-->
+    {updatePresetButton}
     <div id="bgcontainer">
         <div id = "weaponContainer" data-toggle="tooltip" title="" class = "inventoryContainers">
         </div>
