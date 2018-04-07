@@ -11,6 +11,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr 6, 2018
+* Commented out var_dump and echo from testing to fix header issue - QL
 * Added Stat validation for empty entries - QL
 * Fixed Memory_Model for catalog - QL
 * Updated custom controller to process preset adding, and editing to csv files- QL

@@ -33,10 +33,10 @@ class Custom extends Application
             // retrieve & update data transfer buffer
             $preset = (array) $this->Presets->create();
             //$preset = (array) $this->session->userdata('preset');
-            var_dump($preset);
-            echo('<br/>');
+            // var_dump($preset);
+            // echo('<br/>');
             $preset = array_merge($preset, $this->input->post());
-            var_dump($preset);
+            // var_dump($preset);
             $preset = (object) $preset;  // convert back to object
 
             // validate away
