@@ -15,9 +15,29 @@ class Custom extends Application
     {
         $this->load->library('parser');
 		$baseurl = base_url();
-		$this->data = array(
-			'urlLink' => $baseurl
-		);
+
+        $presetButton = '<input type="submit" value="Update Preset" onclick="updatePreset()"></input>';
+
+        $role = $this->session->userdata('userrole');
+		if ($role == ROLE_ADMIN) {
+            $this->data = array(
+                'urlLink' => $baseurl,
+                'updatePresetButton' => $presetButton
+            );
+
+        } else if ($role == ROLE_USER) {
+            $this->data = array(
+                'urlLink' => $baseurl,
+                'updatePresetButton' => ""
+            );
+        } else {
+            $this->data = array(
+                'urlLink' => $baseurl,
+                'updatePresetButton' => ""
+            );
+            redirect('/welcome');
+        }
+
 		$this->data['pagebody'] = 'custom_creation';
 		$this->render();
     }
