@@ -36,13 +36,15 @@ class Application extends CI_Controller
 	{
 		$this->data['pagetitle'] = 'PoEEquips';
         $customBar = '<li><a href="/custom">Custom</a></li>';
+        $categoryBar = '<li><a href="/Category">Edit Catagories</a></li>';
         $fields = array(
             'custom' => $customBar
         );
         $role = $this->session->userdata('userrole');
         if ($role == ROLE_ADMIN) {
             $fields = array(
-                'custom' => $customBar
+                'custom' => $customBar,
+                'category' => $categoryBar
             );
         } else if ($role == ROLE_USER) {
             $fields = array(

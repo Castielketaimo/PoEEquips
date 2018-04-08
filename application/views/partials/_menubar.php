@@ -10,6 +10,7 @@
       <li><a href="/catalog">Catalog</a></li>
       <li><a href="/about">About</a></li>
       {custom}
+        {category}
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="/welcome">User Role<b class="caret"></b></a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
