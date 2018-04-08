@@ -15,6 +15,10 @@
 * added determining user role in custom controller - QL & RT
 * update MY_Controller to display menubar according to user role - QL & RT
 * added {custom} and {updatepreset} button - QL & RT
+* Added tests folder - RT
+* Added PresetListTest - RT 
+* Added PresetTest - RT 
+* Added 7 test cases  - RT 
 #### Apr 6, 2018
 * Commented out var_dump and echo from testing to fix header issue - QL
 * Added Stat validation for empty entries - QL
