@@ -14,6 +14,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr.8, 2018
+* Fixed travis - QL
 * Fixed fopen for presets - QL
 * Fixed session variable for User Role- RT
 * Fixed Category.php displaying table values - QL
