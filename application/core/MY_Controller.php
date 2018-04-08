@@ -48,11 +48,13 @@ class Application extends CI_Controller
             );
         } else if ($role == ROLE_USER) {
             $fields = array(
-                'custom' => $customBar
+                'custom' => $customBar,
+				'category' => ""
             );
         } else {
             $fields = array(
-                'custom' => ""
+                'custom' => "",
+				'category' => ""
             );
         }
 		$this->data['menubar'] = $this->parser->parse('partials/_menubar', $fields, true);

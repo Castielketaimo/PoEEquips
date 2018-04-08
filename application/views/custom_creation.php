@@ -279,8 +279,7 @@ function updatePreset() {
         <select name="Gloves" id="GlovesDropDown" onchange="updateContainersOption(this)">
             <option disabled selected value>Gloves</option>
         </select>
-
-        <button type="button" class="btn btn-primary" id = "clearbtn">Clear</button>
+        <br/>
         <!-- <input type="hidden" name="Helmet" value="5"></input>
         <input type="hidden" name="Chest" value="12"></input>
         <input type="hidden" name="Shields" value="14"></input>
@@ -292,6 +291,8 @@ function updatePreset() {
     <input type="hidden" name="admin" value=""/>
 <!--    <input type="submit" value="Update Preset" onclick="updatePreset()"></input>-->
     {updatePresetButton}
+    <br/>
+    <button type="button" class="btn btn-primary" id = "clearbtn">Clear</button>
     <div id="bgcontainer">
         <div id = "weaponContainer" data-toggle="tooltip" title="" class = "inventoryContainers">
         </div>

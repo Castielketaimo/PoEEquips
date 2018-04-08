@@ -7,10 +7,19 @@
 * Changelog Format: Read from newest to oldest
 
 ## Version 2.0
+### Added components
+-------------------------------------------------------------------------------------------------
+* Added Travis.yml - QL
 
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr.8, 2018
+* Fixed travis - QL
+* Fixed fopen for presets - QL
+* Fixed session variable for User Role- RT
+* Fixed Category.php displaying table values - QL
+* Fixed Edit Category for CSV- QL
+* Updated Memory_Model to function model - QL
 * added accessory maintenance to catalog controller - GB
 * added rules to Accessories model - GB
 * added rules to Categories model - GB
@@ -20,9 +29,9 @@
 * update MY_Controller to display menubar according to user role - QL & RT
 * added {custom} and {updatepreset} button - QL & RT
 * Added tests folder - RT
-* Added PresetListTest - RT 
-* Added PresetTest - RT 
-* Added 7 test cases  - RT 
+* Added PresetListTest - RT
+* Added PresetTest - RT
+* Added 7 test cases  - RT
 #### Apr 6, 2018
 * Commented out var_dump and echo from testing to fix header issue - QL
 * Added Stat validation for empty entries - QL

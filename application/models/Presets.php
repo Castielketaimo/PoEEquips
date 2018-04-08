@@ -15,7 +15,7 @@ class Presets extends CSV_Model
 	 */
 	function __construct()
 	{
-		parent::__construct(".\assets\csv\Presets.csv", 'PresetId');
+		parent::__construct("../public/assets/csv/Presets.csv", 'PresetId');
 	}
 
 	// provide form validation rules
