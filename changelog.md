@@ -11,6 +11,7 @@
 ### Updated components
 -------------------------------------------------------------------------------------------------
 #### Apr.8, 2018
+* Updated Memory_Model to function model - QL
 * added accessory maintenance to catalog controller - GB
 * added rules to Accessories model - GB
 * added rules to Categories model - GB
