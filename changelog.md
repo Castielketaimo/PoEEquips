@@ -2,7 +2,7 @@
 
 ## Rules
 
-* Team membership:  NC (Captain), QL (Mate), CL (Mate), RT (Mate)
+* Team membership:  NC (Captain), QL (Mate), CL (Mate), RT (Mate), GB(Mate)
 * Team conventions: Allman notation, markdown for changelog  
 * Changelog Format: Read from newest to oldest
 
@@ -10,7 +10,11 @@
 
 ### Updated components
 -------------------------------------------------------------------------------------------------
-
+#### Apr.8, 2018
+* added accessory maintenance to catalog controller - GB
+* added rules to Accessories model - GB
+* added rules to Categories model - GB
+* updated mycontroller to hide edit categories, unless admin - GB
 #### Apr 7, 2018
 * added determining user role in custom controller - QL & RT
 * update MY_Controller to display menubar according to user role - QL & RT
@@ -29,6 +33,11 @@
 
 ### New components
 -------------------------------------------------------------------------------------------------
+#### Apr.8, 2018
+* itemedit.php - GB
+* Category.php conroller - GB
+* category.php view - GB
+* category_edit.php - GB
 #### Mar 28, 2018
 * Custom.php - CL
 * custom_creation.php -CL

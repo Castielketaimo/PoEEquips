@@ -47,8 +47,22 @@ class Catalog extends Application
 			//Store catagory name
 			$CategoryName = $CategoryRowQuery[0]->Name;
 
+            $role = $this->session->userdata('userrole');
+
 			//Template for accessories data to replace
-			$rowTemplate = "
+            if ($role == ROLE_ADMIN) {
+                $rowTemplate = "
+				<tr>
+					<td><a href=\"/Catalog/edit/{AccessoriesId}\"><input type=\"button\" value=\"{AccessoriesId}\"/></a></td>
+					<td>{ItemName}</td>
+					<td>{Strength}</td>
+					<td>{Dexterity}</td>
+					<td>{Intelligence}</td>
+					<td><img src='/assets/images/{ImagePath}' alt='{ItemName} at /assets/images/{ImagePath}'/></td>
+					<td>{CategoryName}</td>
+				</tr>";
+            } else {
+                $rowTemplate = "
 				<tr>
 					<td>{AccessoriesId}</td>
 					<td>{ItemName}</td>
@@ -57,8 +71,9 @@ class Catalog extends Application
 					<td>{Intelligence}</td>
 					<td><img src='/assets/images/{ImagePath}' alt='{ItemName} at /assets/images/{ImagePath}'/></td>
 					<td>{CategoryName}</td>
-				</tr>
-			";
+				</tr>";
+            }
+
 
 			//Replace each {} keyword with data saved
 			$data = array(
@@ -109,5 +124,85 @@ class Catalog extends Application
 //
 	}
 
+    // initiate editing of a task
+    public function edit($AccessoriesId = null)
+    {
+        $this->load->model('Accessories');
+
+        if ($AccessoriesId == null)
+            redirect('/Catalog');
+        $accessory = $this->Accessories->get($AccessoriesId);
+        //print_r($accessory);
+        echo $accessory->AccessoriesId;
+        $this->session->set_userdata('accessory', $accessory);
+
+        $this->showit();
+    }
+
+    // Render the current DTO
+    private function showit()
+    {
+        $this->load->helper('form');
+        $accessory = $this->session->userdata('accessory');
+        //echo $accessory->AccessoriesId;
+        $this->data['AccessoriesId'] = $accessory->AccessoriesId;
+
+        // if no errors, pass an empty message
+        if ( ! isset($this->data['error']))
+            $this->data['error'] = '';
+
+        $fields = array(
+            'faccessory'      => form_label('Accessory Name') . form_input('Name', isset($accessory->accessory) ? null : $accessory->Name),
+            'fstrength'  => form_label('Strength') . form_input('Strength',isset($accessory->strength) ? null : $accessory->Strength),
+            'fdexterity'  => form_label('Dexterity') . form_input('Dexterity', isset($accessory->dexterity) ? null : $accessory->Dexterity),
+            'fintelligence'  => form_label('Intelligence') . form_input('Intelligence', isset($accessory->intelligence) ? null : $accessory->Intelligence),
+            'zsubmit'    => form_submit('submit', 'Update Accessory'),
+        );
+        $this->data = array_merge($this->data, $fields);
+
+        $this->data['pagebody'] = 'itemedit';
+        $this->render();
+    }
+
+    // handle form submission
+    public function submit()
+    {
+        // setup for validation
+        $this->load->library('form_validation');
+        $this->load->model('Accessories');
+
+        $this->form_validation->set_rules($this->Accessories->rules());
+
+        // retrieve & update data transfer buffer
+        $accessory = (array) $this->session->userdata('accessory');
+        $accessory = array_merge($accessory, $this->input->post());
+        $accessory = array_slice($accessory, 1);
+        //print_r($accessory);
+        $accessory = (object) $accessory;  // convert back to object
+        $this->session->set_userdata('accessory', (object) $accessory);
+
+        // validate away
+        if ($this->form_validation->run())
+        {
+            $this->Accessories->update($accessory);
+
+        } else
+        {
+            $this->alert('<strong>Validation errors!<strong><br>' . validation_errors(), 'danger');
+        }
+        $this->showit();
+    }
+
+    // build a suitable error message
+    private function alert($message) {
+        $this->load->helper('html');
+        $this->data['error'] = heading($message,3);
+    }
+
+    // Forget about this edit
+    function cancel() {
+        $this->session->unset_userdata('accessory');
+        redirect('/Catalog');
+    }
 
 }
