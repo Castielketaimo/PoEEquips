@@ -55,7 +55,6 @@ class Category extends Application
 
         $fields = array(
             'fcategory' => form_label('Category Name') . form_input('Name', isset($category->category) ? null : $category->Name),
-            'zsubmit' => form_submit('submit', 'Update Category'),
         );
         $this->data = array_merge($this->data, $fields);
 

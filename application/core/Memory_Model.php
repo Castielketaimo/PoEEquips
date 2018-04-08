@@ -214,14 +214,13 @@ class Memory_Model extends Entity implements DataMapper
 	 * @param type $which	Value to select
 	 * @return type
 	 */
-	function some($what, $which)
-	{
-		$results = array();
-		foreach ($this->_data as $key => $record)
-			if ($record[$what] == $which)
-				$results[] = $record;
-		return $results;
-	}
+	function some($what, $which) {
+	 	$results = array();
+	 	foreach ($this->_data as $key => $record)
+	 	    if ($record->$what == $which)
+	 		$results[] = $record;
+	 	return $results;
+     }
 
 	// Determine the highest key used
 	function highest()
