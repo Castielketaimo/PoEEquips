@@ -2,10 +2,63 @@
 
 ## Rules
 
-* Team membership:  NC (Captain), QL (Mate), CL (Mate), RT (Mate)
+* Team membership:  NC (Captain), QL (Mate), CL (Mate), RT (Mate), GB(Mate)
 * Team conventions: Allman notation, markdown for changelog  
 * Changelog Format: Read from newest to oldest
 
+## Version 2.0
+### Added components
+-------------------------------------------------------------------------------------------------
+* Added Travis.yml - QL
+
+### Updated components
+-------------------------------------------------------------------------------------------------
+#### Apr.8, 2018
+* Fixed travis - QL
+* Fixed fopen for presets - QL
+* Fixed session variable for User Role- RT
+* Fixed Category.php displaying table values - QL
+* Fixed Edit Category for CSV- QL
+* Updated Memory_Model to function model - QL
+* added accessory maintenance to catalog controller - GB
+* added rules to Accessories model - GB
+* added rules to Categories model - GB
+* updated mycontroller to hide edit categories, unless admin - GB
+#### Apr 7, 2018
+* added determining user role in custom controller - QL & RT
+* update MY_Controller to display menubar according to user role - QL & RT
+* added {custom} and {updatepreset} button - QL & RT
+* Added tests folder - RT
+* Added PresetListTest - RT
+* Added PresetTest - RT
+* Added 7 test cases  - RT
+#### Apr 6, 2018
+* Commented out var_dump and echo from testing to fix header issue - QL
+* Added Stat validation for empty entries - QL
+* Fixed Memory_Model for catalog - QL
+* Updated custom controller to process preset adding, and editing to csv files- QL
+* Replaced Memory_Model with a functional version - QL
+* Updated custom_creation work with new controller methods - QL
+
+### New components
+-------------------------------------------------------------------------------------------------
+#### Apr.8, 2018
+* itemedit.php - GB
+* Category.php conroller - GB
+* category.php view - GB
+* category_edit.php - GB
+#### Mar 28, 2018
+* Custom.php - CL
+* custom_creation.php -CL
+* Created Roles Controller - RT
+* Added define roles into constant.php - RT
+* added dropdown roles to menubar - RT
+
+### Updated components
+-------------------------------------------------------------------------------------------------
+#### Mar 28, 2018
+* Info.php (Added validate function checkchoice, when the key passeed in not in the database, no json will be encoded.) - CL
+* menubar.php (Added link to custom page) -CL
 ## Version 1.0
 
 ### New components

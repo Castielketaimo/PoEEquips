@@ -17,4 +17,12 @@ class Categories extends CSV_Model
 	{
 		parent::__construct('assets/csv/Categories.csv', 'CategoryId');
 	}
+
+    public function rules()
+    {
+        $config = array(
+            ['field' => 'Name', 'label' => 'Accessory Name', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
+        );
+        return $config;
+    }
 }

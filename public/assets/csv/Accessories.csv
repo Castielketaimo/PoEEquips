@@ -1,37 +1,37 @@
 AccessoriesId,Name,Strength,Dexterity,Intelligence,ImagePath,CategoryId
-1,Bone Helmet,10,54,71,helmets/BoneHelmet.png,1
-2,Deicide Mask,37,25,32,helmets/DeicideMask.png,1
-3,Hunter Hood,67,68,63,helmets/HunterHood.png,1
-4,Nightmare Bascinet,10,22,85,helmets/NightmareBascinet.png,1
-5,Royal Burgonet,46,20,76,helmets/RoyalBurgonet.png,1
-6,Solaris Circlet,31,46,15,helmets/SolarisCirclet.png,1
-7,Blood Raiment,71,28,43,armors/BloodRaiment.png,2
-8,Full Dragon Scale,77,36,95,armors/FullDragonScale.png,2
-9,Lordly Plate,67,62,65,armors/LordlyPlate.png,2
-10,Necromancer Silks,69,61,17,armors/NecromancerSilks.png,2
-11,Saintly Chainmail,70,90,20,armors/SaintlyChainmail.png,2
-12,Zodiac Leather,2,82,21,armors/ZodiacLeather.png,2
-13,Champion Kite Shield,42,73,9,shields/ChampionKiteShield.png,3
-14,Elegant Round Shield,29,77,98,shields/ElegantRoundShield.png,3
-15,Golden Buckler,70,19,22,shields/GoldenBuckler.png,3
-16,Reinforced Tower Shield,31,91,96,shields/ReinforcedTowerShield.png,3
-17,Supreme Spiked Shield,52,83,13,shields/SupremeSpikedShield.png,3
-18,Titanium Spirit Shield,61,12,4,shields/TitaniumSpiritShield.png,3
+1,"Bone Helmet",100,50,75,helmets/BoneHelmet.png,1
+2,"Deicide Mask",30,25,30,helmets/DeicideMask.png,1
+3,"Hunter Hood",60,68,60,helmets/HunterHood.png,1
+4,"Nightmare Bascinet",100,22,85,helmets/NightmareBascinet.png,1,"Update Accessory"
+5,"Royal Burgonet",46,20,76,helmets/RoyalBurgonet.png,1
+6,"Solaris Circlet",31,46,15,helmets/SolarisCirclet.png,1
+7,"Blood Raiment",70,28,43,armors/BloodRaiment.png,2
+8,"Full Dragon Scale",77,36,95,armors/FullDragonScale.png,2
+9,"Lordly Plate",67,62,65,armors/LordlyPlate.png,2
+10,"Necromancer Silks",69,61,17,armors/NecromancerSilks.png,2
+11,"Saintly Chainmail",70,90,20,armors/SaintlyChainmail.png,2
+12,"Zodiac Leather",2,82,21,armors/ZodiacLeather.png,2
+13,"Champion Kite Shield",42,73,9,shields/ChampionKiteShield.png,3
+14,"Elegant Round Shield",29,77,98,shields/ElegantRoundShield.png,3
+15,"Golden Buckler",70,19,22,shields/GoldenBuckler.png,3
+16,"Reinforced Tower Shield",31,91,96,shields/ReinforcedTowerShield.png,3
+17,"Supreme Spiked Shield",52,83,13,shields/SupremeSpikedShield.png,3
+18,"Titanium Spirit Shield",61,12,4,shields/TitaniumSpiritShield.png,3
 19,Abyssal,47,95,87,weapon/Abyssal.png,4
 20,Aurumvorax,42,21,68,weapon/Aurumvorax.png,4
 21,Dyadus,60,40,42,weapon/Dyadus.png,4
 22,Tulfall,89,43,42,weapon/Tulfall.png,4
 23,Varunastra,48,49,7,weapon/Varunastra.png,4
 24,Vulconus,65,38,1,weapon/Vulconus.png,4
-25,Crusader Boots,30,39,72,boots/CrusaderBoots.png,5
-26,Dragonscale Boots,58,9,54,boots/DragonscaleBoots.png,5
-27,Murder Boots,55,95,37,boots/MurderBoots.png,5
-28,Sorcerer Boots,56,97,27,boots/SorcererBoots.png,5
-29,Stealth Boots,18,89,32,boots/StealthBoots.png,5
-30,Titan Greaves,26,95,55,boots/TitanGreaves.png,5
-31,Carnal Mitts,17,81,40,gloves/CarnalMitts.png,6
-32,Gripped Gloves,97,7,44,gloves/GrippedGloves.png,6
-33,Legion Gloves,70,29,60,gloves/LegionGloves.png,6
-34,Satin Gloves,75,97,50,gloves/SatinGloves.png,6
-35,Steelscale Gauntlets,27,72,79,gloves/SteelscaleGauntlets.png,6
-36,Titan Gauntlets,92,22,82,gloves/TitanGauntlets.png,6
+25,"Crusader Boots",30,39,72,boots/CrusaderBoots.png,5
+26,"Dragonscale Boots",58,9,54,boots/DragonscaleBoots.png,5
+27,"Murder Boots",55,95,37,boots/MurderBoots.png,5
+28,"Sorcerer Boots",56,97,27,boots/SorcererBoots.png,5
+29,"Stealth Boots",18,89,32,boots/StealthBoots.png,5
+30,"Titan Greaves",26,95,55,boots/TitanGreaves.png,5
+31,"Carnal Mitts",17,81,40,gloves/CarnalMitts.png,6
+32,"Gripped Gloves",97,7,44,gloves/GrippedGloves.png,6
+33,"Legion Gloves",70,29,60,gloves/LegionGloves.png,6
+34,"Satin Gloves",75,97,50,gloves/SatinGloves.png,6
+35,"Steelscale Gauntlets",27,72,79,gloves/SteelscaleGauntlets.png,6
+36,"Titan Gauntlets",92,22,82,gloves/TitanGauntlets.png,6

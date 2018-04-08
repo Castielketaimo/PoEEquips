@@ -81,6 +81,7 @@ class CSV_Model extends Memory_Model
 	 */
 	protected function store()
 	{
+
 		// rebuild the keys table
 		$this->reindex();
 		//---------------------

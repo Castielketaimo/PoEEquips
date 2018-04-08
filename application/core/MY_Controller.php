@@ -21,6 +21,8 @@ class Application extends CI_Controller
 	{
 		parent::__construct();
 
+		// load session so we can use later
+		$this->load->library('session');
 		//  Set basic view parameters
 		$this->data = array ();
 
@@ -33,7 +35,29 @@ class Application extends CI_Controller
 	function render($template = 'template')
 	{
 		$this->data['pagetitle'] = 'PoEEquips';
-		$this->data['menubar'] = $this->parser->parse('partials/_menubar', $this->config->item('menu_choices'), true);
+        $customBar = '<li><a href="/custom">Custom</a></li>';
+        $categoryBar = '<li><a href="/Category">Edit Catagories</a></li>';
+        $fields = array(
+            'custom' => $customBar
+        );
+        $role = $this->session->userdata('userrole');
+        if ($role == ROLE_ADMIN) {
+            $fields = array(
+                'custom' => $customBar,
+                'category' => $categoryBar
+            );
+        } else if ($role == ROLE_USER) {
+            $fields = array(
+                'custom' => $customBar,
+				'category' => ""
+            );
+        } else {
+            $fields = array(
+                'custom' => "",
+				'category' => ""
+            );
+        }
+		$this->data['menubar'] = $this->parser->parse('partials/_menubar', $fields, true);
 		$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
 		$this->data['footer'] = $this->parser->parse('partials/_footer', $this->config->item('menu_choices'), true);
 		$this->parser->parse('template', $this->data);
